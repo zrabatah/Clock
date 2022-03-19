@@ -16,26 +16,39 @@ Debian-like systems:
 
 Build essential should be installed, but if it is not the command below will install it.
 This will install make and the gcc compiler.
+
 sudo apt install build-essential
+
 OR
+
 sudo apt-get install build-essential
 
 Clang can also be used to compile the program.
+
 sudo apt install clang
+
 OR
+
 sudo apt-get install clang
 
 In order to build/compile gtk install the below library.
+
 sudo apt install libgtk-3-dev
+
 OR
+
 sudo apt-get install libgtk-3-dev
 
 Once dependencies are installed, run the below compile command or use make with the provided Makefile.
 
 make clean; make
+
 OR
+
 clang main.c clock.c -o clock -lasound -lm `pkg-config --cflags --libs gtk+-3.0`
+
 OR
+
 gcc main.c clock.c -o clock -lasound -lm `pkg-config --cflags --libs gtk+-3.0`
 
 ##  Desktop File
