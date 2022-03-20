@@ -51,6 +51,10 @@ OR
 
 gcc main.c clock.c -o clock -lasound -lm `pkg-config --cflags --libs gtk+-3.0`
 
+THEN
+
+./clock
+
 ##  Desktop File
 Edit the desktop file with the path to the binary and/or icon.
 Example:
